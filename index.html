@@ -6,7 +6,212 @@
     <title>Mario Kart</title>
     <link rel="stylesheet" href="css/reset.css">
 </head>
+
 <body>
-    
+    <header class="topo">
+        <a class="logo" href="#inicio">Mario Kart</a>
+
+        <nav class="menu" aria-label="Menu Principal">
+            <a href="#descricao">Descrição</a>
+            <a href="#log">Log de Desenvolvimento</a>
+            <a href="#download">Download</a>
+            <a href="#video">Vídeo</a>
+            <a href="#crap">CRAP</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-texto">
+                <p class="tag">Projeto em Pygame</p>
+                <h1>Mario Kart</h1>
+                <p>
+                    Remake do Super Mario Kart de Super Nintendo (SNES) em vista panorâmica,
+                    com seleção de copa, escolha de personagem, itens e ranking local.
+                </p>
+
+                <div class="botoes">
+                    <a href="botao" href="#download">Jogar</a>
+                    <a href="botao botao-claro" href="#descricao">Ver telas</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="faixa">
+            <div>
+                <strong>Grupo</strong>
+                <span>Rafael D. e Pedro W.</span>
+            </div>
+            <div>
+                <strong>Motor</strong>
+                <span>Pygame</span>
+            </div>
+            <div>
+                <strong>Conteúdo</strong>
+                <span>8 pilotos, 3 copas e ranking</span>
+            </div>
+        </section>
+
+        <section class="secao" id="descricao">
+            <div class="container">
+                <p class="tag">Descrição do Jogo</p>
+                <h2>Corrida arcade em 2d</h2>
+
+                <div class="duas-colunas">
+                    <div>
+                        <p>
+                            O jogador passa pelas telas de menu, escolha da copa,
+                            personagem, nome, resumo e corrida. Durante a corrida,
+                            o objetivo é completar o trajeto em primeiro lugar no
+                            menor tempo possível.
+                        </p>
+                        <p>
+                            O jogo tem trilha sonora, efeitos de seleção, coutdown
+                            antes da largada, jogabilidade pelo teclado, drift e itens.
+                            Os melhores tempos são armazenados no ranking local.
+                        </p>
+                    </div>
+                    
+                    <div class="card">
+                        <h3>Membros do grupo</h3>
+                        <ul>
+                            <li>Rafael Duarte</li>
+                            <li>Pedro Wu</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="telas">
+                    <figure>
+                        <img src="img/tela_inicial.png" alt="Tela inicial do jogo">
+                        <figcaption>Tela Inicial</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/tela_copas.png" alt="Tela de seleção da copa">
+                        <figcaption>Seleção da Copa</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/tela_personagens.png" alt="Tela de seleção do personagem">
+                        <figcaption>Seleção do personagem</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/tela_ranking.png" alt="Tela do ranking">
+                        <figcaption>Ranking</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao secao-verde" id="log">
+            <div class="container">
+                <p class="tag">Log de Desenvolvimento</p>
+                <h2>Resumo baseado nos commits</h2>
+
+                <ol class="log">
+                    <li>
+                        <time datetime="2026-04-16">16/04/2026</time>
+                        <p>Início do projeto, ajuste do README, criação da classe principal e carregamento dos assets de mapas e personagens.</p>
+                    </li>
+                    <li>
+                        <time datetime="2026-04-17">17/04/2026</time>
+                        <p>Primeiros testes da janela do jogo e inclusao do storyboard.</p>
+                    </li>
+                    <li>
+                        <time datetime="2026-04-18">18/04/2026</time>
+                        <p>Construção da tela inicial com texto, navegação pelo teclado, destaque da opção selecionada e botão de sair.</p>
+                    </li>
+                    <li>
+                        <time datetime="2026-04-20">20/04/2026</time>
+                        <p>Implementação e finalização da tela de ranking.</p>
+                    </li>
+                    <li>
+                        <time datetime="2026-04-21">21/04/2026</time>
+                        <p>Início da tela de escolha de copa.</p>
+                    </li>
+                    <li>
+                        <time datetime="2026-04-22">22/04/2026</time>
+                        <p>Ajustes de tamanhos, fontes, sons, ícones das copas, cards de seleção e tela para inserir nome.</p>
+                    </li>
+                    <li>
+                        <time datetime="2026-04-23">23/04/2026</time>
+                        <p>Criação da tela de personagens, salvamento do tempo em arquivo, animações, tela de informações, countdown e tela de corrida.</p>
+                    </li>
+                    <li>
+                        <time datetime="2026-04-24">24/04/2026</time>
+                        <p>Ajustes no fluxo antes da corrida, música, mouse oculto, movimento do personagem e novos assets espelhados.</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="secao" id="download">
+            <div class="container duas-colunas">
+                <div>
+                    <p class="tag">Download</p>
+                    <h2>Pacote zip do jogo</h2>
+                    <span class="botao desativado">Adicionar link do zip</span>
+                </div>
+
+                <div class="card escuro">
+                    <h3>Instruções para executar</h3>
+                    <pre><code>python -m pip install pygame
+python jogo.py</code></pre>
+                    <ul>
+                        <li>W Acelera</li>
+                        <li>S Freia</li>
+                        <li>A/D viram o kart</li>
+                        <li>Espaço ativa o drift</li>
+                        <li>Q usa o item disponível</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao secao-verde" id="video">
+            <div class="container duas-colunas">
+                <div>
+                    <p class="tag">Vídeo curto</p>
+                    <h2>Apresentação do jogo</h2>
+                    <p>
+                        Vídeo curto apresentando o jogo funcionando.
+                    </p>
+                </div>
+
+                <div class="video-placeholder">
+                    <strong>lembrar de colocar o video</strong>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao" id="crap">
+            <div class="container">
+                <p class="tag">Avaliação visual</p>
+                <h2>Príncipios CRAP na primeira versão</h2>
+
+                <div class="crap">
+                    <article class="card">
+                        <h3>Contraste</h3>
+                        <p>Tem que adicionar alguma coisa</p>
+                    </article>
+                    <article class="card">
+                        <h3>Repetição</h3>
+                        <p>Tem que adicionar alguma coisa</p>
+                    </article>
+                    <article class="card">
+                        <h3>Alinhamento</h3>
+                        <p>Tem que adicionar alguma coisa</p>
+                    </article>
+                    <article class="card">
+                        <h3>Proximidade</h3>
+                        <p>Tem que adicionar alguma coisa</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>Mario Kart - Rafael D. e Pedro W. - Laranja</p>
+    </footer>
 </body>
 </html>
