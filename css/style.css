@@ -73,3 +73,49 @@ h3 {
 strong {
     font-weight: 900;
 }
+
+.tag {
+    margin-bottom: 0.5rem;
+    color: var(--vermelho);
+    font-size: 0.8;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.container {
+    width: min(1080px, calc(100% - 32px));
+    margin: 0 auto;
+}
+
+.topo {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    background: var(--amarelo);
+    border-radius: var(--borda);
+}
+
+.logo {
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.menu a {
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: var(--vermelho);
+}
