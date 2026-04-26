@@ -285,3 +285,38 @@ strong {
   margin-bottom: 0;
 }
 
+pre {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  overflow-x: auto;
+  background: #090a14;
+  border: 3px solid #000;
+  color: #fff08a;
+}
+
+pre,
+code {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.video-placeholder {
+  min-height: 260px;
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+  background: var(--azul-escuro);
+  color: var(--branco);
+  text-align: center;
+}
+
+.video-placeholder strong,
+.video-placeholder span {
+  display: block;
+}
+
+.video-placeholder strong {
+  margin-bottom: 0.5rem;
+  color: #fff08a;
+  font-size: 1.8rem;
+  font-weight: 900;
+}
