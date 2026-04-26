@@ -320,3 +320,15 @@ code {
   font-size: 1.8rem;
   font-weight: 900;
 }
+
+.rodape {
+  padding: 1.5rem;
+  background: var(--azul-escuro);
+  color: var(--branco);
+  text-align: center;
+}
+
+.rodape p {
+  margin: 0;
+  font-weight: 900;
+}
