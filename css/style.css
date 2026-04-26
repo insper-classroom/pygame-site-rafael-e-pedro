@@ -259,3 +259,29 @@ strong {
   object-fit: cover;
   image-rendering: pixelated;
 }
+
+.log {
+  display: grid;
+  gap: 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.log li {
+  padding: 1rem;
+  background: var(--branco);
+  border: var(--borda);
+  box-shadow: var(--sombra);
+}
+
+.log time {
+  display: block;
+  margin-bottom: 0.4rem;
+  color: var(--vermelho);
+  font-weight: 900;
+}
+
+.log p {
+  margin-bottom: 0;
+}
+
