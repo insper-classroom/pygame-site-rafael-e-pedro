@@ -194,3 +194,49 @@ strong {
 .faixa span {
   display: block;
 }
+
+.secao {
+  padding: 4rem 0;
+}
+
+.secao-verde {
+  background: var(--verde);
+}
+
+.duas-colunas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.card,
+.video-placeholder,
+.telas figure {
+  border: var(--borda);
+  box-shadow: var(--sombra);
+  background: var(--branco);
+}
+
+.card {
+  padding: 1.25rem;
+}
+
+.card p:last-child,
+.card ul:last-child {
+  margin-bottom: 0;
+}
+
+.card ul {
+  padding-left: 1.25rem;
+  list-style: disc;
+}
+
+.card li + li {
+  margin-top: 0.35rem;
+}
+
+.escuro {
+  background: var(--azul-escuro);
+  color: var(--branco);
+}
