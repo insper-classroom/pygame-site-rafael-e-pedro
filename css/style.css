@@ -240,3 +240,22 @@ strong {
   background: var(--azul-escuro);
   color: var(--branco);
 }
+
+.telas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.telas figure {
+  margin: 0;
+  overflow: hidden;
+}
+
+.telas img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  image-rendering: pixelated;
+}
