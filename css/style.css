@@ -119,3 +119,55 @@ strong {
 .menu a:hover {
     color: var(--vermelho);
 }
+
+.hero {
+    min-height: 720px;
+    display: flex;
+    align-items: flex-end;
+    padding: 4rem 2rem;
+    background:
+        linear-gradient(90deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.12)),
+        url("../../pygame-jogo-rafael-e-pedro/assets/img/Telas/tela_inicial.jpeg") center / cover;
+    border-bottom: var(--borda);
+}
+
+.hero-texto {
+  max-width: 760px;
+  color: var(--branco);
+  text-shadow: 3px 3px 0 #000;
+}
+
+.hero .tag {
+  color: #fff08a;
+}
+
+.hero p {
+  font-weight: 900;
+}
+
+.botoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 1.5rem;
+}
+
+.botao {
+  display: inline-block;
+  padding: 0.8rem 1rem;
+  background: var(--amarelo);
+  border: var(--borda);
+  box-shadow: var(--sombra);
+  color: var(--texto);
+  font-weight: 900;
+  text-decoration: none;
+  text-shadow: none;
+}
+
+.botao-claro {
+  background: var(--branco);
+}
+
+.desativado {
+  opacity: 0.75;
+}
