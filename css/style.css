@@ -74,6 +74,11 @@ strong {
     font-weight: 900;
 }
 
+figcaption {
+    padding: 0.75rem;
+    font-weight: 900;
+}
+
 .tag {
     margin-bottom: 0.5rem;
     color: var(--vermelho);
@@ -190,8 +195,7 @@ strong {
   border-right: 0;
 }
 
-.faixa strong,
-.faixa span {
+.faixa strong, .faixa span {
   display: block;
 }
 
@@ -210,9 +214,7 @@ strong {
   align-items: start;
 }
 
-.card,
-.video-placeholder,
-.telas figure {
+.card, .video-placeholder, .telas figure {
   border: var(--borda);
   box-shadow: var(--sombra);
   background: var(--branco);
@@ -222,8 +224,7 @@ strong {
   padding: 1.25rem;
 }
 
-.card p:last-child,
-.card ul:last-child {
+.card p:last-child, .card ul:last-child {
   margin-bottom: 0;
 }
 
@@ -294,31 +295,22 @@ pre {
   color: #fff08a;
 }
 
-pre,
-code {
+pre, code {
   font-family: "Courier New", Courier, monospace;
 }
 
 .video-placeholder {
-  min-height: 260px;
-  display: grid;
-  place-items: center;
-  padding: 2rem;
+  padding: 0;
   background: var(--azul-escuro);
   color: var(--branco);
-  text-align: center;
+  overflow: hidden;
 }
 
-.video-placeholder strong,
-.video-placeholder span {
+.video-placeholder iframe {
   display: block;
-}
-
-.video-placeholder strong {
-  margin-bottom: 0.5rem;
-  color: #fff08a;
-  font-size: 1.8rem;
-  font-weight: 900;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
 }
 
 .rodape {
