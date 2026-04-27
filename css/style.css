@@ -132,7 +132,7 @@ figcaption {
     padding: 4rem 2rem;
     background:
         linear-gradient(90deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.12)),
-        url("../../pygame-jogo-rafael-e-pedro/assets/img/Telas/tela_inicial.jpeg") center / cover;
+        url("../img/tela_inicial.png") center / cover;
     border-bottom: var(--borda);
 }
 
