@@ -300,24 +300,17 @@ pre, code {
 }
 
 .video-placeholder {
-  min-height: 260px;
-  display: grid;
-  place-items: center;
-  padding: 2rem;
+  padding: 0;
   background: var(--azul-escuro);
   color: var(--branco);
-  text-align: center;
+  overflow: hidden;
 }
 
-.video-placeholder strong, .video-placeholder span {
+.video-placeholder iframe {
   display: block;
-}
-
-.video-placeholder strong {
-  margin-bottom: 0.5rem;
-  color: #fff08a;
-  font-size: 1.8rem;
-  font-weight: 900;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
 }
 
 .rodape {
