@@ -173,10 +173,6 @@ figcaption {
   background: var(--branco);
 }
 
-.desativado {
-  opacity: 0.75;
-}
-
 .faixa {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
